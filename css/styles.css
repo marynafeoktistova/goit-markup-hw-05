@@ -728,7 +728,7 @@ img {
   border-radius: 4px;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
 }
 
 .backdrop.is-open {
@@ -741,12 +741,6 @@ img {
 .backdrop:not(.is-open) .modal {
   transform: translate(-50%, -50%) scale(1.5);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal {
-  padding: 72px 24px 24px 24px;
-  margin-bottom: 8px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .model-open {
@@ -766,7 +760,6 @@ img {
   padding: 0;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 
