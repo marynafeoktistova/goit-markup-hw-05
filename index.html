@@ -478,7 +478,7 @@
               </svg>
             </div>
           </div>
-          <div class="modal-field">
+          <div class="modal-field-wrapper">
             <label for="user-email" class="modal-label">Phone</label>
             <div class="input-wrapper">
               <input
@@ -517,21 +517,22 @@
               placeholder="Text input"
             ></textarea>
           </div>
-          <div class="modal-field-chek">
+          <div class="modal-field-check">
             <input
               type="checkbox"
               name="user-privacy"
-              id="policy"
+              id="user-privacy"
               class="modal-check visually-hidden"
               value="true"
             />
-            <label for="user-privac" class="modal-check-text"
-              ><span>
+            <label for="user-privacy" class="modal-check-text"
+              ><span class="modal-check-span">
                 <svg class="modal-check-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-Vector"></use>
                 </svg> </span
-              >I accept the terms and conditions of the Privacy Policy</label
-            >
+              >I accept the terms and conditions of the
+              <a href="" class="link-policy" target="_blank">Privacy Policy</a>
+            </label>
           </div>
 
           <button type="submit" class="modal-bnb">Send</button>
