@@ -691,9 +691,13 @@ img {
   gap: 24px;
 }
 
-.footer-btn-form:hover .footer-btn-form:focus {
+.footer-btn-form:hover {
   background-color: #404bbf;
 
+}
+
+.footer-btn-form:focus {
+  background-color: #404bbf;
 }
 
 
@@ -741,20 +745,42 @@ img {
   position: absolute;
   right: 24px;
   top: 24px;
-  border-radius: 100%;
+  border-radius: 50%;
   border: none;
   width: 24px;
   height: 24px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 
 .model-open:hover {
-  background-color: #4d5ae5;
+  background-color: #404bbf;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: white;
+}
+
+
+.model-open:focus {
+  background-color: #404bbf;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: white;
+}
+
+
+
+
+
+.modal-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-text {
@@ -787,11 +813,12 @@ img {
   color: #8e8f99;
   display: block;
   margin-bottom: 4px;
+  line-height: 1.17;
 }
 
 .modal-field {
-  margin-bottom: 8px;
-
+  margin-bottom: 24px;
+  margin-bottom: 16px
 }
 
 .modal-iconmoon {
@@ -804,8 +831,13 @@ img {
 
 }
 
+.modal-inpur {
+  background-color: transparent;
+  outline: transparent;
+}
+
 .modal-input:focus {
-  border-color: 1px solid #4d5ae5;
+  border-color: #4d5ae5;
   ;
 }
 
@@ -827,6 +859,14 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding: 8px 16px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  outline: transparent;
+  ransition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
 }
 
 .modal-textarea::placeholder {
@@ -835,6 +875,7 @@ img {
   line-height: 1.16667;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
+  border-color: #4D5AE5
 }
 
 .modal-bnb {
@@ -852,6 +893,8 @@ img {
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
+  cursor: pointe;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -880,6 +923,8 @@ img {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  ine-height: 1.17;
+
 }
 
 .modal-check:checked+.modal-check-text span {
