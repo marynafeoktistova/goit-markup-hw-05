@@ -735,8 +735,7 @@ img {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  visibility: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 24px;
 }
 
@@ -936,11 +935,6 @@ img {
 
 }
 
-
-
-
-
-
 .modal-check-text {
   font-weight: 400;
   font-size: 12px;
@@ -960,11 +954,11 @@ img {
   width: 16px;
   height: 16px;
   margin-right: 12px;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  display: inline-flex;
   background-color: transparent;
 }
 
@@ -977,5 +971,4 @@ img {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
-  border: 1px solid #404bbf;
 }
