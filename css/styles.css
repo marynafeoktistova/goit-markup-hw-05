@@ -726,7 +726,7 @@ img {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background-color: #fcfcfc;
   border-radius: 4px;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 24px;
 }
@@ -751,9 +751,7 @@ img {
   margin-bottom: 8px;
 }
 
-.modal-field-form {
-  margin-bottom: 8px;
-}
+
 
 .model-open {
   position: absolute;
@@ -839,9 +837,12 @@ img {
   line-height: 1.17;
 }
 
+.modal-field-comment {
+  margin-bottom: 16px;
+}
+
 .modal-field {
-  margin-bottom: 24px;
-  margin-bottom: 16px
+  margin-bottom: 8px;
 }
 
 .modal-iconmoon {
@@ -911,9 +912,7 @@ img {
   margin-bottom: 24px;
 }
 
-.modal-field-wrapper {
-  margin-bottom: 8px;
-}
+
 
 .modal-bnb {
   margin-top: 24px;
@@ -960,48 +959,15 @@ img {
   border-radius: 2px;
   width: 16px;
   height: 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
   margin-right: 12px;
-  display: flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
-  align-items: 1.17;
   border: 1px solid rgba(46, 47, 66, 0.4);
   display: inline-flex;
+  background-color: transparent;
 }
 
-
-
-
-
-
-
-
-
-
-.modal-check:checked {
-  background-color: #404bbf;
-  border: 1px solid #404bbf;
-  fill: #f4f4fd;
-
-}
-
-.modal-check-text span {
-  background-color: #404bbf;
-  border: 1px solid #404bbf;
-  fill: #f4f4fd;
-  width: 16px;
-  height: 16px;
-  border-radius: 2px;
-
-  margin-right: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: transparent;
-  align-items: 1.17;
-}
 
 .link-policy {
   color: #4d5ae5;
@@ -1010,4 +976,6 @@ img {
 .modal-check:checked+.modal-check-text .modal-check-span {
   background-color: #404bbf;
   border: none;
+  fill: #f4f4fd;
+  border: 1px solid #404bbf;
 }
