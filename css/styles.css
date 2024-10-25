@@ -636,6 +636,11 @@ img {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: transparent;
   margin-right: 24px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  color: #ffffff;
 }
 
 ::placeholder {
@@ -643,7 +648,7 @@ img {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  color: #fff;
+  color: #ffffff;
   padding: 8px 16px;
 }
 
@@ -657,13 +662,14 @@ img {
   fill: #fff;
   align-items: center;
   justify-content: center;
+  margin-left: 16px;
 }
 
 .footer-btn-form {
 
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
+
   height: 40px;
   background-color: #4d5ae5;
   font-weight: 500;
@@ -675,10 +681,14 @@ img {
   color: #fff;
   border: none;
   display: flex;
+  min-width: 165px;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .footer-forms {
   display: flex;
+  gap: 24px;
 }
 
 .footer-btn-form:hover .footer-btn-form:focus {
@@ -781,6 +791,7 @@ img {
 
 .modal-field {
   margin-bottom: 8px;
+
 }
 
 .modal-iconmoon {
@@ -843,6 +854,11 @@ img {
   color: #fff;
 
 }
+
+
+
+
+
 
 .modal-check-text {
   font-weight: 400;
