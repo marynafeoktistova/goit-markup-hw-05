@@ -731,7 +731,7 @@ img {
   padding: 24px;
 }
 
-.backdrop.is-open {
+.backdrop .is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -944,19 +944,19 @@ img {
 }
 
 .modal-check-span {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
   border-radius: 2px;
   width: 16px;
   height: 16px;
   margin-right: 12px;
-  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
