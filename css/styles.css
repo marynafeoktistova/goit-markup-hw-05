@@ -923,6 +923,8 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
 
 }
 
